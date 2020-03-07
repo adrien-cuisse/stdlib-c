@@ -5,12 +5,6 @@
 
 
 
-/* DEBUG FUNCTIONS - TO REMOVE */
-unsigned int print_number(int value);
-
-
-
-
 /**
  * Missing functions
  * 
@@ -40,13 +34,10 @@ unsigned int print_number(int value);
 
 
 
+
 #include "firstOccurence.h"
 #include "firstCharacterOccurence.h"
 #include "length.h"
-
-
-
-
 
 
 
