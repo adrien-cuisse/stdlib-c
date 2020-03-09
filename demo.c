@@ -1,5 +1,8 @@
 
 
+#include "stdlib/stdio.h"
+#include "stdlib/stdlib.h"
+
 #include "stdlib/String/String.h"
 #include "stdlib/System/System.h"
 
@@ -66,6 +69,7 @@ void _start(int count, char ** vector)
 
 	char * digits = "01234567890";
 
+	exit(atoi("-42"));
 	printptr(sbrk(0));
 	write(1, "\n", 1);
 	

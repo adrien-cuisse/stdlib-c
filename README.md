@@ -9,12 +9,16 @@ Implemented system calls from that
 
 Architecture
 
-stdlib/ root directory
+stdlib/
 ├── Character/ ??
-├── String/ string functions
-└── System/ non-portable code
-    └── OS/ - OS specificities
-        └── bits/ - bits specifities
-            ├── asm - assembly functions
-            ├── stdlib - stdlib implementation for that system
-            └── system - system calls functions
+├── stdio/ - global stdlio.h functions
+├── stdlib/ - global stdlib.h functions
+├── String/ - string functions 
+└── System/ - system dependant code
+    ├── linux/ - linux specifics
+    │   └── x64/ - 64 bits specifics
+    │       ├── asm/ - assembly functions
+    │       ├── stdio/ - linux64 stdio specifics
+    │       ├── stdlib/ - linux64 stdlib specifics
+    │       └── system/ - linux64 system calls
+    └── System.h
