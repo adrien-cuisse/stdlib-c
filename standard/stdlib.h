@@ -55,8 +55,11 @@
 
 
 
+#include "stdlib/abs.h"
 #include "stdlib/atoi.h"
 #include "stdlib/atol.h"
+#include "stdlib/labs.h"
+
 
 
 
