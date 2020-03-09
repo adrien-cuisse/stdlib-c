@@ -116,6 +116,10 @@ void _start(int count, char ** vector)
 	allocated[13] = '\n';
 	allocated[14] = '\0';
 	write(1, allocated, 32);
+	free(& allocated);
+
+
+
 	exit(0);
 
 	printnbr(digitsCount(-99, 10), digits, 10);

@@ -14,6 +14,15 @@ void * malloc(unsigned long bytesCount)
 		return (void *) 0;
 	}
 
+	/**
+	 * TODO: checks bytes count:
+	 *  lesser than page size -> heap, 1 page and next time check some empty area in that block
+	 *  greater : virtual memory
+	 * 
+	 * TODO: track allocated blocks
+	 * 	don't system call if previously allocated block is free and is large enough
+	*/
+
 	memoryBlock = sbrk(bytesCount + sizeof(* flagBlock));
 	
 	/* Allocation failed, return NULL */
