@@ -27,21 +27,47 @@ void assert(int expected, int computed)
 }
 
 
-void printnbr(long number, const char * const alphabet, unsigned int base)
+/* How many characters are needed to represent the number in a string (without the \0) */
+unsigned int digitsCount(long value, unsigned int base)
 {
+	int count;
+
+	count = 0;
+	if (value < 0)
+	{	
+		count++;
+		value = -value;
+	}
+
+	do 
+	{
+		value /= base;
+		count++;
+	} 
+	while (value);
+
+	return count;
+}
+
+
+void printnbr(long number, const char * const alphabet, unsigned int base)
+{	
 	if (number < 0)
 	{
 		write(1, "-", 1);
-		printnbr(~ number, alphabet, base);
+		printnbr(-number, alphabet, base);
 	}
-
-	if (number >= base)
-	{
-		printnbr(number / base, alphabet, base);
+	else
+	{		
+		if (number >= base)
+		{
+			printnbr(number / base, alphabet, base);
+		}
+		
+		write(1, & alphabet[number % base], 1);	
 	}
-	
-	write(1, & alphabet[number % base], 1);
 }
+
 
 void printptr(void * ptr)
 {
@@ -62,12 +88,42 @@ void donothing(void * ptr)
 }
 
 
+
 void _start(int count, char ** vector)
 {
 	/*int length;*/
 
 
 	char * digits = "01234567890";
+
+	char * allocated;
+
+	allocated = malloc(sizeof (* allocated) * 15);
+
+	allocated[0] = 'H';
+	allocated[1] = 'e';
+	allocated[2] = 'l';
+	allocated[3] = 'l';
+	allocated[4] = 'o';
+	allocated[5] = ',';
+	allocated[6] = ' ';
+	allocated[7] = 'w';
+	allocated[8] = 'o';
+	allocated[9] = 'r';
+	allocated[10] = 'l';
+	allocated[11] = 'd';
+	allocated[12] = '!';
+	allocated[13] = '\n';
+	allocated[14] = '\0';
+	write(1, allocated, 32);
+	exit(0);
+
+	printnbr(digitsCount(-99, 10), digits, 10);
+	write(1, "\n", 1);
+
+	printnbr(atoi(" - 42"), digits, 10);
+	write(1, "\n", 1);
+	exit(0);
 
 	exit(atoi("-42"));
 	printptr(sbrk(0));

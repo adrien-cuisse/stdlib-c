@@ -6,11 +6,11 @@
 
 
 /**
- * Increase the heap size by [increment] bytes
+ * Allocates [increment] bytes on the heap
  * 
- * @param increment - how many bytes to add to the heap
+ * @param increment - how many bytes to allocate
  * 
- * @return - the new address of the data segment's end
+ * @return - pointer to the newly allocated memory, or -1 on failure
  */
 void * sbrk(unsigned long increment);
 
