@@ -1,10 +1,10 @@
 
 
-#include "stdlib/stdio.h"
-#include "stdlib/stdlib.h"
+#include "standard/stdio.h"
+#include "standard/stdlib.h"
 
-#include "stdlib/String/String.h"
-#include "stdlib/System/System.h"
+#include "standard/String/String.h"
+#include "standard/System/System.h"
 
 
 #define FALSE 0

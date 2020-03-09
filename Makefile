@@ -26,9 +26,9 @@ OBJ = $(addsuffix .o, $(SRC))
 #OBJ = $(addsuffix .o, $(basename $(SRC)))
 
 # Custom library files
-LIB-SRC-C = $(shell find stdlib -type f -name '*.c')
+LIB-SRC-C = $(shell find standard -type f -name '*.c')
 LIB-OBJ-C = $(addsuffix .o, $(LIB-SRC-C))  #$(LIB-SRC-C:.c=.o)
-LIB-SRC-ASM = $(shell find stdlib -type f -name '*.s')
+LIB-SRC-ASM = $(shell find standard -type f -name '*.s')
 LIB-OBJ-ASM = $(addsuffix .o, $(LIB-SRC-ASM))  #$(LIB-SRC-ASM:.s=.o)
 
 
