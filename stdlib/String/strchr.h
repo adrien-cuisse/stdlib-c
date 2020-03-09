@@ -1,6 +1,6 @@
 
-#ifndef STRING_FIRST_CHARACTER_OCCURENCE_HEADER
-#define STRING_FIRST_CHARACTER_OCCURENCE_HEADER
+#ifndef STRCHR_HEADER
+#define STRCHR_HEADER
 
 
 
@@ -13,9 +13,9 @@
  * 
  * @return - if [character] could be found, returns its address, NULL otherwise
  */
-const char * String_firstCharacterOccurence(const char * string, char character);
+const char * strchr(const char * string, char character);
 
 
 
 
-#endif /* STRING_FIRST_CHARACTER_OCCURENCE_HEADER */
+#endif /* STRCHR_HEADER */

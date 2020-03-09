@@ -1,10 +1,10 @@
 
-#include "firstCharacterOccurence.h"
+#include "strchr.h"
 
 
 
 
-const char * String_firstCharacterOccurence(const char * string, char character)
+const char * strchr(const char * string, char character)
 {
 	while (* string)
 	{

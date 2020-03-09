@@ -1,10 +1,10 @@
 
-#include "firstCharacterOccurence.h"
+#include "strstr.h"
 
 
 
 
-const char * String_firstOccurence(const char * haystack, const char * needle)
+const char * strstr(const char * haystack, const char * needle)
 {
 	const char * match;
 	const char * needleIterator;

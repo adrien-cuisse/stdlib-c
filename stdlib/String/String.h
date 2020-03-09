@@ -35,9 +35,9 @@
 
 
 
-#include "firstOccurence.h"
-#include "firstCharacterOccurence.h"
-#include "length.h"
+#include "strstr.h"
+#include "strchr.h"
+#include "strlen.h"
 
 
 

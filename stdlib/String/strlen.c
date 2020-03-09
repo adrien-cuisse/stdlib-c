@@ -1,10 +1,10 @@
 
-#include "String.h"
+#include "strlen.h"
 
 
 
 
-unsigned int String_length(const char * string)
+unsigned int strlen(const char * string)
 {
 	int length;
 

@@ -1,6 +1,6 @@
 
-#ifndef STRING_LENGTH_HEADER
-#define STRING_LENGTH_HEADER
+#ifndef STRLEN_HEADER
+#define STRLEN_HEADER
 
 
 
@@ -12,9 +12,9 @@
  * 
  * @return - the length of the string (excluding NULL character)
  */
-unsigned int String_length(const char * string);
+unsigned int strlen(const char * string);
 
 
 
 
-#endif /* STRING_LENGTH_HEADER */
+#endif /* STRLEN_HEADER */

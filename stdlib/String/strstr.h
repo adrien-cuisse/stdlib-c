@@ -1,6 +1,6 @@
 
-#ifndef STRING_FIRST_OCCURENCE_HEADER
-#define STRING_FIRST_OCCURENCE_HEADER
+#ifndef STRSTR_HEADER
+#define STRSTR_HEADER
 
 
 
@@ -13,9 +13,9 @@
  * 
  * @return - if [needle] could be found in [haystack], returns its address, NULL otherwise
  */
-const char * String_firstOccurence(const char * haystack, const char * needle);
+const char * strstr(const char * haystack, const char * needle);
 
 
 
 
-#endif /* STRING_FIRST_OCCURENCE_HEADER */
+#endif /* STRSTR_HEADER */
