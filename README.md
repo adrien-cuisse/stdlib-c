@@ -1,9 +1,10 @@
 # stdlib-c
-C standard library remade for fun
-Actually working on linux X64
+C standard library remade for fun, actually working on linux x64
+
 
 ## Iteration 1
 Wrote a function in assembly, called it in C, examined with GDB what is sent in which register
+
 Implemented system calls from that
 
 ## Iteration 2
