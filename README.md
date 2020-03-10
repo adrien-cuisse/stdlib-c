@@ -6,8 +6,10 @@ Wrote a function in assembly, called it in C, examined with GDB what is sent in 
 Implemented system calls from that
 
 ## Iteration 2
+Used strace to check what malloc does, implemented brk system call
 
-Architecture
+
+### Architecture
 ```
 stdlib/
 ├── Character/ ??
@@ -24,7 +26,7 @@ stdlib/
     └── System.h
 ```
 
-# Coming features
+### Coming features
 ```
 standard/System/linux/x64/stdlib
 ├──> malloc: 
