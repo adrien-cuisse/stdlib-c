@@ -8,7 +8,7 @@ Implemented system calls from that
 ## Iteration 2
 
 Architecture
-
+```
 stdlib/
 ├── Character/ ??
 ├── stdio/ - global stdlio.h functions
@@ -22,9 +22,10 @@ stdlib/
     │       ├── stdlib/ - linux64 stdlib specifics
     │       └── system/ - linux64 system calls
     └── System.h
-
+```
 
 # Coming features
+```
 standard/System/linux/x64/stdlib
 ├──> malloc: 
 │	   ├──> track allocated blocks and store them
@@ -33,3 +34,4 @@ standard/System/linux/x64/stdlib
 │ 	   └──> if size is over a page, allocate virtual memory (mmap)
 └──> free
 	   └──> set new breakpoint if whole page can be freed 
+```
