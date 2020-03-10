@@ -12,7 +12,7 @@ Used strace to check what malloc does, implemented brk system call
 ### Architecture
 ```
 stdlib/
-├── Character/ ??
+├── Character/ character functions
 ├── stdio/ - global stdlio.h functions
 ├── stdlib/ - global stdlib.h functions
 ├── String/ - string functions 
